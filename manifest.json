@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Calculo de Ação",
+  "description": "Extensão para calcular o preço justo de uma ação, utilizando o principio de Benjamin Graham",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

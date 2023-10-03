@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extensão Preço Justo</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Preço Justo</h1>
+      <form>
+        <div class="valores">
+          <label for="iLPA">LPA: </label>
+          <input
+            type="number"
+            name="LPA"
+            id="iLPA"
+            step="0.001"
+            min="0"
+            placeholder="Lucro Por Ação"
+            required
+          />
+        </div>
+
+        <div class="valores">
+          <label for="iVPA">VPA: </label>
+          <input
+            type="number"
+            name="VPA"
+            id="iVPA"
+            step="0.001"
+            min="0"
+            placeholder="Valor Patrimonial por Ação"
+            required
+          />
+        </div>
+
+        <div class="butoes">
+          <input class="calcular" type="submit" value="Calcular" />
+          <input class="limpar" type="reset" value="Limpar" />
+        </div>
+      </form>
+      <section id="precoJusto"></section>
+    </main>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/zMatheus22" target="_blank"
+          ><strong>Matheus Vinicyus Strada</strong></a
+        >
+      </p>
+    </footer>
+
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>
