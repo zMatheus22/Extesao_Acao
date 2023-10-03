@@ -6,7 +6,6 @@
   - [Screenshot](#screenshot)
 - [Meu processo](#meu-processo)
   - [Construído com](#construído-com)
-  - [Adicionando extensão](#adicionando-extensão)
   - [Recursos úteis](#recursos-úteis)
 - [Autor](#autor)
 
@@ -23,10 +22,6 @@
 - Marcação HTML5 semântica
 - Propriedades personalizadas CSS
 - Script com JavaScript
-
-### Adicionando extensão
-
-![](./screenshot/instalacao.mp4)
 
 ### Recursos úteis
 
