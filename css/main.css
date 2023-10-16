@@ -1,0 +1,83 @@
+main {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+main section.valores {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+main label {
+  padding-right: 10px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+main input[type="number"] {
+  border-bottom: 1px solid var(--branco);
+  width: 100%;
+  background-color: transparent;
+  color: var(--branco);
+  font-size: 17.5px;
+  text-align: center;
+}
+
+main input[type="number"]::placeholder {
+  text-align: start;
+  font-size: 12.5px;
+}
+
+main input[type="number"]:hover {
+  border-bottom: 1px solid var(--azul);
+  transition: 0.6s;
+}
+
+/* Remover as seta do input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main section.butoes {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main input.limpar,
+main input.calcular {
+  width: 100%;
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+main input.calcular {
+  background-color: var(--azul-claro);
+  color: var(--branco);
+}
+
+main input.limpar:hover,
+main input.calcular:hover {
+  background-color: var(--azul);
+  font-size: 15.5px;
+  color: var(--branco);
+  border-radius: 10px;
+
+  transition: 0.8s;
+}
+
+main section#apresentacaoDoValor {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 17px;
+}

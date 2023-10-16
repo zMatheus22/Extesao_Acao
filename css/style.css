@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
 /* 
     Cores
         branco: #F2F2F2
@@ -29,107 +33,15 @@
 html,
 body {
   height: 100vh;
+  width: 300px;
+  margin: auto;
 }
 
 body {
+  height: 320px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: start;
   background-color: var(--azul-galaxia);
   color: var(--branco);
-}
-
-main {
-  width: 300px;
-  margin: auto;
-  padding: 20px;
-}
-
-main h1 {
-  text-align: center;
-}
-
-div.valores {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  padding-top: 20px;
-}
-
-label {
-  padding-right: 10px;
-  padding-top: 2px;
-  font-size: 16px;
-}
-
-input[type="number"] {
-  border-bottom: 1px solid var(--branco);
-  width: 100%;
-  background-color: transparent;
-  color: var(--branco);
-  font-size: 16.7px;
-}
-
-input[type="number"]::placeholder {
-  font-size: 12.5px;
-}
-
-input[type="number"]:hover {
-  border-bottom: 1px solid var(--azul);
-  transition: 0.6s;
-}
-
-/* Remover as seta do input number */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-div.butoes {
-  width: 200px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-input.limpar,
-input.calcular {
-  width: 100%;
-  padding: 5px;
-  margin: 3px;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-input.calcular {
-  background-color: var(--azul-claro);
-  color: var(--branco);
-}
-
-input.limpar:hover,
-input.calcular:hover {
-  background-color: var(--azul);
-  font-size: 15.5px;
-  color: var(--branco);
-  border-radius: 10px;
-
-  transition: 0.8s;
-}
-
-section#precoJusto {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 17px;
-}
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 0px;
-}
-
-footer a {
-  text-decoration: none;
-  color: var(--azul-claro);
 }
