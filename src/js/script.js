@@ -2,30 +2,23 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (evento) => {
   evento.preventDefault();
-  aprecentarDoPrecoJusto();
+  apresentar();
 });
 
-function aprecentarDoPrecoJusto() {
-  const precoJusto = document.getElementById("precoJusto");
-  const lpa = document.getElementById("iLPA");
-  const vpa = document.getElementById("iVPA");
+async function apresentar() {
+  // Chamando as funções.
+  const { precoJusto, precoTeto, dividendoProjetado } = await import(
+    "./apresentacaoDinamica.js"
+  );
 
-  const resultado = calculoGraham(lpa.value, vpa.value);
+  // Lendo o arquivo aberto.
+  const arquivoAberto = window.location.pathname.split("/").pop();
 
-  precoJusto.innerHTML = `<h2>Valor justo <strong>R$ ${resultado}</strong></h2>`;
-}
-
-function calculoGraham(lpa, vpa) {
-  // √ (22,5 x LPA x VPA)
-  return Math.sqrt(22.5 * lpa * vpa).toFixed(2);
-}
-
-function calculoDividendoProjetado(lpa, payout) {
-  // LPA x PAYOUT
-  return (lpa * (payout / 100)).toFixed(2);
-}
-
-function calculoPrecoteto(calculoDPA, dividendoDesejado) {
-  // Dividendo Projetado ÷ DY Desejato
-  return calculoDPA / (dividendoDesejado / 100);
+  if (arquivoAberto == "precoJusto.html") {
+    precoJusto();
+  } else if (arquivoAberto == "precoTeto.html") {
+    precoTeto();
+  } else if (arquivoAberto == "divProjetado.html") {
+    dividendoProjetado();
+  }
 }
