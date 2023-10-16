@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extensão Calculo de Ação</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Importando os componentes -->
+    <script src="../src/components/menu.js"></script>
+    <script src="../src/components/botao.js"></script>
+    <script src="../src/components/footer.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Calculo de Preço Teto</h1>
+      <menu-component></menu-component>
+    </header>
+    <main>
+      <form id="iForm">
+        <section class="valores">
+          <label for="iLPA">LPA: </label>
+          <input
+            type="number"
+            name="LPA"
+            id="iLPA"
+            step="0.001"
+            min="0"
+            placeholder="Lucro Por Ação"
+            required
+          />
+        </section>
+        <section class="valores">
+          <label for="iPAYOUT">PAYOUT: </label>
+          <input
+            type="number"
+            name="PAYOUT"
+            id="iPAYOUT"
+            step="0.001"
+            min="0"
+            placeholder="Porcentagem do Lucro Líquido"
+            required
+          />
+        </section>
+        <section class="valores">
+          <label for="iDY">Dividendo: </label>
+          <input
+            type="number"
+            name="DY"
+            id="iDY"
+            step="0.001"
+            min="0"
+            placeholder="Dividendo Desejado"
+            required
+          />
+        </section>
+
+        <botao-component></botao-component>
+      </form>
+      <section id="apresentacaoDoValor"></section>
+    </main>
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/calculo.js"></script>
+  </body>
+</html>

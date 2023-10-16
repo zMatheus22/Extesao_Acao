@@ -3,56 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extensão Preço Justo</title>
-
+    <title>Extensão Calculo de Ação</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="./src/components/footer.js"></script>
   </head>
   <body>
+    <header>
+      <h1>Calculo de Ação</h1>
+    </header>
     <main>
-      <h1>Preço Justo</h1>
-      <form>
-        <div class="valores">
-          <label for="iLPA">LPA: </label>
-          <input
-            type="number"
-            name="LPA"
-            id="iLPA"
-            step="0.001"
-            min="0"
-            placeholder="Lucro Por Ação"
-            required
-          />
-        </div>
-
-        <div class="valores">
-          <label for="iVPA">VPA: </label>
-          <input
-            type="number"
-            name="VPA"
-            id="iVPA"
-            step="0.001"
-            min="0"
-            placeholder="Valor Patrimonial por Ação"
-            required
-          />
-        </div>
-
-        <div class="butoes">
-          <input class="calcular" type="submit" value="Calcular" />
-          <input class="limpar" type="reset" value="Limpar" />
-        </div>
-      </form>
-      <section id="precoJusto"></section>
+      <menu>
+        <section>
+          <a href="./pages/precoJusto.html">Preço Justo</a>
+        </section>
+        <section>
+          <a href="./pages/precoTeto.html">Preço teto</a>
+        </section>
+        <section>
+          <a href="./pages/divProjetado.html">Dividendo Projetado</a>
+        </section>
+      </menu>
     </main>
     <footer>
-      <p>
-        Desenvolvido por
-        <a href="https://github.com/zMatheus22" target="_blank"
-          ><strong>Matheus Vinicyus Strada</strong></a
-        >
-      </p>
+      <footer-component></footer-component>
     </footer>
-
-    <script type="module" src="./src/js/script.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/calculo.js"></script>
   </body>
 </html>
