@@ -5,6 +5,7 @@
   "version": "1.0",
   "permissions": ["scripting"],
   "action": {
+    "default_icon": "./public/img/favicon.png",
     "default_popup": "index.html"
   }
 }

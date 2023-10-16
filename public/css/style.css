@@ -1,9 +1,13 @@
 @charset "UTF-8";
+/* Fonte */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+/* Estilos */
 @import url("./header.css");
 @import url("./main.css");
 @import url("./footer.css");
+/* Menus */
+@import url("./menu_Index.css");
+@import url("./menu_Pages.css");
 
 /* 
     Cores
@@ -33,14 +37,14 @@
 html,
 body {
   height: 100vh;
-  width: 300px;
+  width: 350px;
   margin: auto;
 }
 
 body {
-  height: 320px;
+  height: 470px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: start;
   background-color: var(--azul-galaxia);
   color: var(--branco);
