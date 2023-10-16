@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Extensão/Website para calcular ações da bolsa de valores, com o objetivo de auxiliar a escolha de ação."
+    />
     <title>Extensão Calculo de Ação</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
 
     <script src="./src/components/footer.js"></script>
   </head>
@@ -14,15 +23,33 @@
     </header>
     <main>
       <menu>
-        <section>
-          <a href="./pages/precoJusto.html">Preço Justo</a>
-        </section>
-        <section>
-          <a href="./pages/precoTeto.html">Preço teto</a>
-        </section>
-        <section>
-          <a href="./pages/divProjetado.html">Dividendo Projetado</a>
-        </section>
+        <a href="./pages/precoJusto.html" target="_self">
+          <section>
+            <img
+              src="./public/img/price_check.svg"
+              alt="Imagem de preço justo."
+            />
+            <p>Preço Justo</p>
+          </section>
+        </a>
+        <a href="./pages/precoTeto.html" target="_self">
+          <section>
+            <img
+              src="./public/img/price_change.svg"
+              alt="Imagem de valor máximmo"
+            />
+            <p>Preço Teto</p>
+          </section>
+        </a>
+        <a href="./pages/divProjetado.html" target="_self">
+          <section>
+            <img
+              src="./public/img/currency_exchange.svg"
+              alt="Imagem de dinheiro de volta"
+            />
+            <p>Expectativa</p>
+          </section>
+        </a>
       </menu>
     </main>
     <footer>

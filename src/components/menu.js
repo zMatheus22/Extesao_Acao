@@ -5,13 +5,39 @@ class Menu extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-        <nav>
-          <ul>
-            <li><a href="./precoJusto.html">Preço justo</a></li>
-            <li><a href="./precoTeto.html">Preço teto</a></li>
-            <li><a href="./divProjetado.html">Dividendo Projetado</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <a href="./precoJusto.html" target="_self">
+            <li>
+              <img
+                src="../public/img/price_check.svg"
+                alt="Imagem de preço justo."
+              />
+              <p>Preço Justo</p>
+            </li>
+          </a>
+          
+          <a href="./precoTeto.html" target="_self">
+            <li>
+              <img
+                src="../public/img/price_change.svg"
+                alt="Imagem de valor máximmo"
+              />
+              <p>Preço Teto</p>
+            </li>
+          </a>
+          
+          <a href="./divProjetado.html" target="_self">
+            <li>
+              <img
+                src="../public/img/currency_exchange.svg"
+                alt="Imagem de dinheiro de volta"
+              />
+              <p>Expectativa</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
       `;
   }
 }
