@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Calculo de Ação",
-  "description": "Extensão para calcular o preço justo de uma ação, utilizando o principio de Benjamin Graham",
+  "description": "Este software é uma extensão/web que oferece um serviço abrangente e sofisticado para investidores interessados no mercado de ações. Baseando-se nos princípios e métodos estabelecidos por Benjamin Graham e Barsi, o sistema permite calcular com precisão o preço justo, o dividendo projetado anual e o preço teto de ações listadas na bolsa de valores. Com uma interface intuitiva e de fácil utilização, os usuários têm acesso imediato a análises financeiras detalhadas, o que lhes permite tomar decisões informadas e estratégicas de investimento. Através da aplicação dos princípios de Benjamin Graham e do método de Barsi, o software proporciona uma avaliação abrangente e confiável do valor intrínseco de ações, garantindo uma abordagem fundamentada e inteligente para investimentos no mercado de capitais.",
   "version": "1.0",
   "permissions": ["scripting"],
   "action": {
